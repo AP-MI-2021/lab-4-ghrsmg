@@ -79,6 +79,10 @@ def main():
             if verif_pozitive_cresc(l):
                 print("DA")
             else: print("NU")
+        elif optiune == "x":
+            break
+        else:
+            print("Optiune gresita! Reincercati: ")
 
 
 main()
