@@ -22,7 +22,7 @@ def eliminare_duplicate(l):
 def test_eliminare_duplicate():
     assert eliminare_duplicate([15, 15, 10, 11, 12]) == [15, 10, 11, 12]
     assert eliminare_duplicate([1, 1, 1, 2, 2, 3, 4, 5, 5]) == [1, 2, 3, 4, 5]
-
+    assert eliminare_duplicate([-2, 1, 2, -3, 2, -2]) == [1, -3]
 
 def suma_primelor_n_pozitive(l, n):
     '''functia calculeaza in s suma numerelor pozitive si for-ul se opreste atunci cand n are valoarea 0'''
@@ -36,6 +36,8 @@ def suma_primelor_n_pozitive(l, n):
 
 def test_suma_primelor_n_pozitive():
     assert suma_primelor_n_pozitive([1, -1, 2, -2, 3, 4], 3) == 6
+    assert suma_primelor_n_pozitive([1, -3, 2, 4, -5, 6],3) == 7
+    assert suma_primelor_n_pozitive([0,-1, 2, 3, -4, 0],4) == 5
 
 
 def verif_pozitive_cresc(l):
